@@ -36,52 +36,39 @@
     
 
     <!-- Navbar -->
-    <!-- Navbar -->
-<nav class="bg-gray-900 shadow-lg py-6 z-10 relative">
-    <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center">
-            <!-- Logo y enlace a la página de inicio -->
-            <a class="flex items-center text-white text-lg font-semibold" href="../index.html">
-                <img class="h-16 mr-5" src="src/PNG/log.png" alt="Logo">
-                PLAY+
-            </a>
-            <!-- Botón de menú hamburguesa visible en dispositivos móviles -->
-            <button class="block lg:hidden focus:outline-none" onclick="toggleMenu()">
-                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-        <!-- Menú responsive, se muestra en dispositivos móviles -->
-        <div id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:justify-end mt-4">
-            <a class="text-gray-300 hover:text-white lg:ml-4" href="index.html">Inicio</a>
-            <a class="text-gray-300 hover:text-white lg:ml-4" href="src/nosotros.html">Nosotros</a>
-            <a class="text-gray-300 hover:text-white lg:ml-4" href="src/plataformas.html">Juegos</a>
-            <a class="text-gray-300 hover:text-white lg:ml-4" href="src/genero.html">Género</a>
-            <a class="text-gray-300 hover:text-white lg:ml-4" href="src/mercancia.html">Mercancía</a>
-            <!-- Formulario de búsqueda, ajustar visibilidad según sea necesario -->
-            <form class="hidden lg:flex ml-4" role="search">
-                <input class="bg-gray-800 text-white rounded-md py-2 px-4 mr-2 focus:outline-none" type="search"
-                    placeholder="Search" aria-label="Search">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
-</nav>
+    <nav class="bg-gray-900 shadow-lg py-6 z-10 relative">
+        <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
 
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById("menu");
-        if (menu.classList.contains("hidden")) {
-            menu.classList.remove("hidden");
-        } else {
-            menu.classList.add("hidden");
-        }
-    }
-</script>
+        <header >
+            <div class="mx-auto flex h-20 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
 
+                <div class="container mx-auto px-4">
+                    <div class="flex items-center justify-between">
+                        <!-- Logo y enlace a la página de inicio -->
+                        <a class="flex items-center text-white text-lg font-semibold" href="../index.html">
+                            <img class="h-16 mr-5" src="../src/PNG/log.png" alt="Logo">
+                            PLAY+
+                        </a>
+                        <div class="hidden lg:block">
+                          <!-- Enlaces a otras páginas -->
+                          <a class="ml-4 text-gray-300 hover:text-white" href="../index.html">Inicio</a>
+                          <a class="ml-4 text-gray-300 hover:text-white" href="src/nosotros.html">Nosotros</a>
+                          <a class="ml-4 text-gray-300 hover:text-white" href="src/plataformas.html">Juegos</a>
+                          <a class="ml-4 text-gray-300 hover:text-white" href="src/genero.html">Género</a>
+                          <a class="ml-4 text-gray-300 hover:text-white" href="src/mercancia.html">Mercancía</a>
+                        </div>
+                        <form class="ml-auto lg:ml-0 flex items-center" role="search">
+                            <input class="bg-gray-800 text-white rounded-md py-2 px-4 mr-2 focus:outline-none" type="search" placeholder="Search" aria-label="Search">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
+            
+
+        </header>
+    </nav>
 
     <div class="relative z-5">
         <div class="flex justify-center items-center h-screen">
@@ -99,7 +86,6 @@
         </nav>
 
         
-
         <!-- TARJETAS DE JUEGOS -->
 
         <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-8">
